@@ -1,0 +1,40 @@
+.infoContainer{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+
+.selectedInfo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    z-index: 1;
+    width: 30vw;
+    height: 100%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.close{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    color: white;
+}
+
+.x{
+    background-color: black;
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+hr{
+    width: 70%;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+

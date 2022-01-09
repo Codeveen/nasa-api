@@ -1,0 +1,103 @@
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
+    object-fit: contain;
+}
+
+.mainContainer > h1{
+    color: #fff;
+    font-size: 150px;
+    margin-top: -100px;
+    font-family:sans-serif;
+}
+
+.mainContainer > p {
+  margin-top: 8px;
+  color: #fff;
+  font-size: 32px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.exp-btn{
+    color: white;
+    border: 1px solid white;
+    padding: 12px 30px;
+    font-size: medium;
+    margin: 5px;
+    border-radius: 2px;
+    transition: 0.3s;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.exp-btn:hover{
+    background-color: black;
+    border: none;
+}
+
+.about-btn{
+    color: black;
+    background-color: white;
+    padding: 12px 30px;
+    font-size: medium;
+    margin: 5px;
+    border-radius: 2px;
+    transition: 0.3s;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.btns-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+
+}
+
+@media screen and (max-width: 960px) {
+    .mainContainer > h1 {
+      font-size: 70px;
+      margin-top: -150px;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .mainContainer > h1 {
+      font-size: 50px;
+      margin-top: -100px;
+    }
+
+    .mainContainer > p {
+      font-size: 30px;
+    }
+  
+    .btns-container {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+    }
+  
+    .exp-btn {
+      width: 100%;
+    }
+}

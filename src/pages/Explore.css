@@ -1,0 +1,134 @@
+.explore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    display: grid;
+    gap: 5em;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 60px;
+    margin-top: 20px;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.explore-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 10px;
+}
+
+.msg{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+
+    
+}
+
+.searchBox{
+    display: flex;
+    flex-direction: row;
+    padding: 15px 12px;
+    width: 15vw;
+    border-radius: 30px;
+    background-color: #E3E7F1;
+    margin-top: 12vh;
+    margin-bottom: 5vh;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.searchBox:hover{
+    box-shadow: 3px 3px 5px #888888;
+}
+
+.searchIcon{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white
+}
+
+.loadermsg{
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.input{
+    color: black;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    margin-left: 15px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1536px){
+    .line{
+        max-width: 1200px;
+    }
+
+    .container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 1165px) {
+    .container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .msg{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .line{
+        max-width: 750px;
+    }
+
+    .searchBox{
+        width: 20vw;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .line{
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 885px){
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .line{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
