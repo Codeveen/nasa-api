@@ -2,14 +2,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --clr-dark: rgb(13,17,19);
-    --clr-light: #fff;
-    --clr-accent: rgb(222,52,0);
-    --clr-accent-dark: rgb(163, 38, 0);
-    --clr-secondry: rgb(0,76,199);
-}
-
 h1,h2,h3,p{
     margin:0;
 }
@@ -36,9 +28,9 @@ img{
 .btn{
     cursor: pointer;
     border: 0;
-    background: var(--clr-secondry);
+    background: rgb(0,76,199);
     border-radius: 100vw;
-    color: var(--clr-light);
+    color: #fff;
     font-weight: bold;
     padding: .5em 1.5em;
     transition: all 0.5s ease;
