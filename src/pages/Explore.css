@@ -63,6 +63,10 @@
     color: white
 }
 
+.line{
+    background-color: white;
+}
+
 .loadermsg{
     margin-top: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
