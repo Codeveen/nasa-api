@@ -4,6 +4,13 @@
     position: absolute;
 }
 
+@media screen and (max-width: 414px){
+    .infoContainer{
+        font-size: 10px;
+    }
+
+}
+
 .selectedInfo{
     display: flex;
     align-items: center;

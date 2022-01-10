@@ -45,8 +45,11 @@ function Explore(){
                     <h3 className="explore-head">Explore</h3>
                 <div className="container">
                     {picList?.length?picList.map((pic, index)=> <Card key={index} pic={pic} onPicSelect={onPicSelect}/>):
+                    <div className="msg-container">
+                        <p className="user"><i class="fas fa-user-ninja"></i>Developer</p>
                     <div className="msg">
                         <h3>Please specify the number of pictures to be displayed :) </h3>
+                    </div>
                     </div>}
                 </div>
                     </div>
